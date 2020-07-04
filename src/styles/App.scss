@@ -1,0 +1,9 @@
+@import './components/button';
+
+.title {
+  display: inline-block;
+  line-height: 1.7em;
+  padding: 0 6px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid $primary-color;
+}

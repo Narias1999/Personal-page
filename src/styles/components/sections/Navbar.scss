@@ -1,0 +1,28 @@
+@import './../../commons/mixins';
+@import './../../commons/variables';
+
+.Navbar {
+  @include flex;
+  @include box-shadow();
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  background: #fff;
+  border-radius: 50px;
+  &-right {
+    @include flex;
+  }
+  &-items {
+    @include flex(flex-start);
+    & a {
+      margin-right: 17px;
+      text-transform: uppercase;
+      color: $black;
+      font-weight: bold;
+    }
+  }
+}

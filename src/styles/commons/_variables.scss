@@ -1,0 +1,8 @@
+$primary-color: #01a9b4;
+$ligth-primary: lighten(
+  $color: $primary-color,
+  $amount: 60,
+);
+$white: #fcfcfc;
+$grey-text: #a3a2a2;
+$black: #393e46;

@@ -1,0 +1,24 @@
+@mixin flex($justifyContent: space-between) {
+  display: flex;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+
+@mixin flexColumn($alignItems: flex-start) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: $alignItems;
+}
+
+@mixin box-shadow(
+  $horiz: 2px,
+  $vert: 2px,
+  $blur: 10px,
+  $spread: 0px,
+  $color: #00000070
+) {
+  -webkit-box-shadow: $horiz $vert $blur $spread $color;
+  -moz-box-shadow: $horiz $vert $blur $spread $color;
+  box-shadow: $horiz $vert $blur $spread $color;
+}

@@ -1,0 +1,36 @@
+@import './../../commons/mixins';
+@import './../../commons/variables';
+
+.Hero {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &-image {
+    height: 100%;
+    background: $primary-color;
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-info {
+    @include flexColumn();
+    padding: 40px;
+    max-width: 500px;
+    height: 100%;
+  }
+  &-hello {
+    color: $grey-text;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  &-name {
+    padding: 10px 0;
+  }
+  &-description {
+    margin-bottom: 15px;
+    line-height: 1.4em;
+  }
+}

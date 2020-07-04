@@ -1,0 +1,21 @@
+@import './../../commons/variables';
+
+.Skills {
+  padding: 40px 50px;
+  background: $ligth-primary;
+  &-sections {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+  }
+}
+.SkillsSection {
+  &-title {
+    margin-bottom: 15px;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+}
