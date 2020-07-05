@@ -25,3 +25,19 @@
 .dark .Achievements {
   background-color: $secondary-black;
 }
+
+@media (max-width: 900px) {
+  .Achievements {
+    padding: 80px 40px;
+  }
+}
+@media (max-width: $tablet-breakpoint) {
+  .Achievements {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .AchievementItem {
+    margin: auto;
+    text-align: center;
+  }
+}

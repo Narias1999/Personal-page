@@ -22,3 +22,14 @@
 .dark .Skills {
   background: $secondary-black;
 }
+@media (max-width: $phone-breakpoint) {
+  .Skills {
+    padding: 40px 30px;
+    &-sections {
+      grid-template-columns: 1fr;
+    }
+  }
+  .SkillsSection-container {
+    grid-template-columns: 1fr;
+  }
+}

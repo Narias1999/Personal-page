@@ -13,3 +13,12 @@
     }
   }
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .Background {
+    padding: 60px 30px;
+    &-sections {
+      grid-template-columns: 1fr;
+    }
+  }
+}

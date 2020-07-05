@@ -1,18 +1,22 @@
 @import './../../commons/mixins';
 @import './../../commons/variables';
-
+$spacing: 20px;
+$burguer-size: 50px;
 .Navbar {
   @include flex;
   @include box-shadow();
   position: fixed;
-  top: 30px;
+  top: $spacing;
   left: 0;
   right: 0;
   width: 90%;
-  padding: 15px;
+  padding: 12px;
   margin: auto;
   background: $white;
   border-radius: 50px;
+  &-burger {
+    display: none;
+  }
   &-logo {
     width: 45px;
   }
@@ -36,5 +40,67 @@
   background-color: $black;
   &-items a {
     color: $white;
+  }
+}
+
+@media (max-width: $phone-breakpoint) {
+  .Navbar {
+    left: auto;
+    right: $spacing;
+    width: $burguer-size;
+    height: $burguer-size;
+    padding: 0;
+    justify-content: center;
+    transition: 0.3s;
+    &-burger {
+      display: block;
+      background-color: transparent;
+      border: 0;
+      width: $burguer-size;
+      height: $burguer-size;
+      border-radius: 50%;
+      color: $primary-color;
+    }
+    &-right,
+    &-logo {
+      display: none;
+    }
+  }
+  .open.Navbar {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    opacity: 0.9;
+  }
+  .open.Navbar .Navbar {
+    &-burger {
+      position: absolute;
+      right: $spacing;
+      top: $spacing;
+    }
+    &-logo {
+      display: block;
+      position: absolute;
+      left: $spacing;
+      top: $spacing;
+    }
+    &-right {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &-items {
+      margin-top: 30px;
+      height: 140px;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    &-item a {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 }
