@@ -8,7 +8,7 @@ import logo from './../../assets/images/logo.svg';
 import './../../styles/components/sections/Navbar.scss';
 
 export function Navbar({ links }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);
   const closeNav = () => setIsOpen(false);
