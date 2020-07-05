@@ -15,10 +15,14 @@ export function Hero({ profile }) {
         <h3 className='Hero-hello'>{profile.greet}</h3>
         <h1 className='Hero-name'>{profile.title}</h1>
         <p className='Hero-description'>{profile.sumary}</p>
-        <button className='button icon Hero-download'>
+        <a
+          className='button icon Hero-download'
+          href='./CV.pdf'
+          download='Nicolas Arias CV.pdf'
+        >
           <FontAwesomeIcon icon={faDownload} />
           <span>{profile.button}</span>
-        </button>
+        </a>
       </div>
     </div>
   );
