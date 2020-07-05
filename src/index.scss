@@ -11,6 +11,14 @@ body {
   color: $black;
 }
 
+.App {
+  color: $black;
+  &.dark {
+    color: $white;
+    background-color: $black;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

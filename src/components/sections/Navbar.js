@@ -1,24 +1,28 @@
 import React from 'react';
 import { DarkModeButton } from './../DarkModeButton';
 import { LanguageButton } from './../LanguageButton';
+import { NavLink } from './../NavLink';
+import logo from './../../assets/images/logo.svg';
 import './../../styles/components/sections/Navbar.scss';
 
-export function Navbar() {
+export function Navbar({ links }) {
   return (
     <nav className='Navbar'>
       <div className='Navbar-logo'>
-        <img src='' alt='' />
+        <NavLink to='#home'>
+          <img src={logo} alt='Nicolás Arias logo' />
+        </NavLink>
       </div>
       <div className='Navbar-right'>
         <ul className='Navbar-items'>
           <li className='Navbar-item'>
-            <a href='#achievements'>Achievements</a>
+            <NavLink to='#achievements'>{links.achievements}</NavLink>
           </li>
           <li className='Navbar-item'>
-            <a href='#background'>Background</a>
+            <NavLink to='#background'>{links.background}</NavLink>
           </li>
           <li className='Navbar-item'>
-            <a href='#skills'>Skills</a>
+            <NavLink to='#skills'>{links.skills}</NavLink>
           </li>
         </ul>
         <div className='Navbar-actions'>

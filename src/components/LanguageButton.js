@@ -1,9 +1,18 @@
 import React from 'react';
+import { Consumer } from './../Context';
 
-export function LanguageButton({ currentLanguage }) {
+export function LanguageButton() {
   return (
-    <button className='button LanguageButton' style={{ marginRight: 10 }}>
-      {currentLanguage === 'spanish' ? 'ES' : 'EN'}
-    </button>
+    <Consumer>
+      {({ language, setSpanish, setEnglish }) => (
+        <button
+          className='button LanguageButton'
+          style={{ marginRight: 10 }}
+          onClick={language === 'en' ? setSpanish : setEnglish}
+        >
+          {language === 'en' ? 'ES' : 'EN'}
+        </button>
+      )}
+    </Consumer>
   );
 }

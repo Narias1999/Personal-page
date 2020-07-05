@@ -1,0 +1,183 @@
+{
+  "en": {
+    "links": {
+      "achievements": "achievements",
+      "background": "background",
+      "skills": "skills"
+    },
+    "profile": {
+      "greet": "Hello!",
+      "title": "I'm Nicolás",
+      "sumary": "Fullstack Developer focusend in frontend. Currently Software Engineer at Bismark Colombia. Experience in Frontend Development using Vue, AngularJs and React. In Backend with NodeJs and GraphQl. Lifelong learner, currently learning computer science fundamentals.",
+      "button": "download CV"
+    },
+    "achievements": [
+      {
+        "title": "3+ Years",
+        "subtitle": "Experience",
+        "icon": "faSuitcase"
+      },
+      {
+        "title": "50+ Github",
+        "subtitle": "repositories",
+        "icon": "faGithub"
+      },
+      {
+        "title": "6+ Personal Projects",
+        "subtitle": "completed",
+        "icon": "faAward"
+      }
+    ],
+    "background": {
+      "title": "My Background",
+      "data": {
+        "experience": {
+          "title": "Experience",
+          "data": [
+            {
+              "institution": "Bismark Colombia",
+              "years": "Nov 2018 - Present",
+              "description": "Bismark Colombia is a telecomunicatios and IoT company industry's leader in Colombia. There I develope high quality user faced software in an agile and highly talented team.\nIn my daily work, I have to use technologies like JavaScript ,HTML, CSS and AngularJs for web apps. NodeJs for microservices, IoT agents and AWS lambdas. Also, I have to do development of new features of an already existed Android app.\nAll of that integrated with the cloud platform Cumulocity IoT.",
+              "position": "Software Engineer"
+            },
+            {
+              "institution": "Qbits Ing.",
+              "years": "Jan 2017 - Oct 2018",
+              "description": "Developing end to end web and mobile applications as freelancers in a small but highly talented team.\nStack used ES6, VueJs, React Native, NodeJs, MongoDB and GraphQL.",
+              "position": "Fullstack Engineer"
+            }
+          ]
+        },
+        "education": {
+          "title": "Education",
+          "data": [
+            {
+              "institution": "SENA",
+              "years": "2017 - 2019",
+              "position": "Associate Degree in Software Development",
+              "description": "Technical formation in software development, learn about the whole process of building large scale software. Design Patterns, OOP, web and mobile development."
+            }
+          ]
+        }
+      }
+    },
+    "skills": {
+      "title": "What am I good at?",
+      "data": {
+        "skills": {
+          "name": "Skills",
+          "data": [
+            { "name": "Frontend", "level": "4 years" },
+            { "name": "Backend", "level": "3 years" },
+            { "name": "Algorithms / Data structures", "level": "Learning" }
+          ]
+        },
+        "languages": {
+          "name": "Languages",
+          "data": [
+            {
+              "name": "Spanish",
+              "level": "Native speaker"
+            },
+            {
+              "name": "English",
+              "level": "Conversational"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "es": {
+    "links": {
+      "achievements": "logros",
+      "background": "background",
+      "skills": "habilidades"
+    },
+    "profile": {
+      "greet": "Hola!",
+      "title": "Soy Nicolás",
+      "sumary": "Desarrollador Fullstack enfocado en frontend. Actualmente Ingeniero de Software en Bismark Colombia. Experiencia en desarrollo Frontend usando Vue, AngularJs y React. En Backend con NodeJs y GraphQl. Nunca paro de aprender! Actualmente aprendiendo los fundamentos de las ciencias de la computación (Estructuras de datos y algoritmos).",
+      "button": "descargar CV"
+    },
+    "achievements": [
+      {
+        "title": "3+ Años de",
+        "subtitle": "Experiencia",
+        "icon": "faSuitcase"
+      },
+      {
+        "title": "50+ Github",
+        "subtitle": "repositorios",
+        "icon": "faGithub"
+      },
+      {
+        "title": "6+ Proyectos personales",
+        "subtitle": "completados",
+        "icon": "faAward"
+      }
+    ],
+    "background": {
+      "title": "Mi background",
+      "data": {
+        "experience": {
+          "title": "Experiencia",
+          "data": [
+            {
+              "institution": "Bismark Colombia",
+              "years": "Nov 2018 - Presente",
+              "description": "Bismark Colombia es una empresa de Telecomunicaciones e IoT líder en Colombia. Allí yo desarrollo software de alta calidad y de cara al usuario en un equipo ágil y muy talentoso.\nEn mi trabajo diario tengo que usar tecnologías como JavaScript ,HTML, CSS y AngularJs para web apps. NodeJs para microservicios, agentes IoT y AWS lambdas. Tembién tengo que desarrollar nuevos features a una app android.\nTodo ello integrado con la plataforma Cumulocity IoT.",
+              "position": "Ingeniero de Software"
+            },
+            {
+              "institution": "Qbits Ing.",
+              "years": "Ene 2017 - Oct 2018",
+              "description": "Desarrollo de aplicaciones web y móviles como freelancers en un equipo pequeño pero muy talentoso.\nStack usado ES6, VueJs, React Native, NodeJs, MongoDB y GraphQL.",
+              "position": "Desarrollador Fullstack"
+            }
+          ]
+        },
+        "education": {
+          "title": "Educación",
+          "data": [
+            {
+              "institution": "SENA",
+              "years": "2017 - 2019",
+              "position": "Tecnología en análisis y desarrollo de software",
+              "description": "Formación técnica en desarrollo de software, Aprendí sobre todo el proceso de desarrollar software a gran escala, Patrones de diseño, POO, desarrollo web y móvil."
+            }
+          ]
+        }
+      }
+    },
+    "skills": {
+      "title": "Para que soy bueno?",
+      "data": {
+        "skills": {
+          "name": "Habilidades",
+          "data": [
+            { "name": "Frontend", "level": "4 años" },
+            { "name": "Backend", "level": "3 años" },
+            {
+              "name": "Algoritmos / Estructuras de datos",
+              "level": "Aprendiendo"
+            }
+          ]
+        },
+        "languages": {
+          "name": "Lenguajes",
+          "data": [
+            {
+              "name": "Español",
+              "level": "Hablante nativo"
+            },
+            {
+              "name": "Inglés",
+              "level": "Conversacional"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

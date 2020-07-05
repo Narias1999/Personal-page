@@ -1,38 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAward, faSuitcase } from '@fortawesome/free-solid-svg-icons';
+import { faSuitcase, faAward } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './../../styles/components/sections/Achievements.scss';
 
-const achievements = [
-  {
-    title: '3+ Years',
-    subtitle: 'Experience',
-    icon: faSuitcase,
-  },
-  {
-    title: '50+ Github',
-    subtitle: 'repositories',
-    icon: faGithub,
-  },
-  {
-    title: '6+ Personal Projects',
-    subtitle: 'completed',
-    icon: faAward,
-  },
-];
+const icons = { faSuitcase, faAward, faGithub };
 
-export function Achievements() {
+export function Achievements({ achievements }) {
   return (
-    <div className='Achievements'>
-      {achievements.map((achievement, index) => (
+    <div className='Achievements' id='achievements'>
+      {achievements.map(({ icon, title, subtitle }, index) => (
         <div className='AchievementItem' key={index}>
           <div className='AchievementItem-icon'>
-            <FontAwesomeIcon size='2x' icon={achievement.icon} />
+            <FontAwesomeIcon size='2x' icon={icons[icon]} />
           </div>
           <div className='AchievementItem-info'>
-            <h3 className='AchievementItem-title'>{achievement.title}</h3>
-            <h5 className='AchievementItem-subtitle'>{achievement.subtitle}</h5>
+            <h3 className='AchievementItem-title'>{title}</h3>
+            <h5 className='AchievementItem-subtitle'>{subtitle}</h5>
           </div>
         </div>
       ))}

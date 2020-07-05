@@ -11,8 +11,11 @@
   width: 90%;
   padding: 15px;
   margin: auto;
-  background: #fff;
+  background: $white;
   border-radius: 50px;
+  &-logo {
+    width: 45px;
+  }
   &-right {
     @include flex;
   }
@@ -23,6 +26,15 @@
       text-transform: uppercase;
       color: $black;
       font-weight: bold;
+      &:hover {
+        color: $primary-color !important;
+      }
     }
+  }
+}
+.dark .Navbar {
+  background-color: $black;
+  &-items a {
+    color: $white;
   }
 }
